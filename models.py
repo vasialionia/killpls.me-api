@@ -7,10 +7,10 @@ import BeautifulSoup
 class Article(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
-    guid = db.Column(db.String, nullable=False, unique=True)
+    guid = db.Column(db.String(255), nullable=False, unique=True)
     content = db.Column(db.Text(4095), nullable=False)
-    tags = db.Column(db.String, nullable=False)
-    posted_at = db.Column(db.String, nullable=False)
+    tags = db.Column(db.String(255), nullable=False)
+    posted_at = db.Column(db.String(255), nullable=False)
     likes_count = db.Column(db.Integer, nullable=False)
 
     def __init__(self, article_id, guid, content, tags, posted_at, likes_count):
