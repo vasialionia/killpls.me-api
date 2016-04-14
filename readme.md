@@ -32,7 +32,7 @@ Returns an array of articles having the tag specified.
 #### POST /api/article/:article_id/vote/:decision
 Votes the article. Decistion can be "yes" or "no".
 
-### Installation
+# Installation
 
 ```sh
 git clone https://github.com/vasialionia/killpls.me-api.git killpls.me
